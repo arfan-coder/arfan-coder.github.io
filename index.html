@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bootcamp Challenge</title>
+    <style>
+        body{
+            background: linear-gradient(to top right, rgb(6, 203, 230), rgb(196, 9, 202));
+        }
+        .container{
+            width: 100vw;
+            height: 100vh;
+            margin: 0 auto;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            display: flex;
+        }
+        .card{
+            height: 80%;
+            padding: 30px;
+            background: #ffff;
+            border-radius: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .form{
+            margin-top: 30px;
+        }
+        .judul{
+            justify-content: center;
+            display: flex;
+            justify-content: center;
+        }
+        .username{
+            margin-bottom: 20px;
+        }
+        .fp{
+            float: right;
+            justify-content: end;
+        }
+        .fp:hover{
+            cursor: pointer;
+        }
+        .btn{
+            margin-top: 20px;
+            padding: 20px;
+            border-radius: 30px;
+            background: linear-gradient(to right, rgb(6, 166, 214), rgb(206, 2, 206));
+            color: #ffff;
+        }
+        .btn:hover{
+            cursor: pointer;
+            
+        }
+        .otherSign{
+            display: flex;
+            justify-content: center;
+        }
+        h5{
+            color: rgb(87, 85, 85);
+        }
+        label, input{
+            width: 100%;
+            padding: 5px;
+            /* margin-bottom: 30px; */
+            border-top: transparent;
+            border-right: transparent;
+            border-left: transparent;
+            outline: transparent;
+        }
+
+        .name{
+            margin-bottom: 20px;
+        }
+        .facebook{
+            justify-content: center;
+            margin-left: 44%;
+            width: 5vw;
+            height: 8vh;
+        }
+        .logo{
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+        }
+        .logo:hover{
+            cursor: pointer;
+            padding: 5px;
+        }
+        .signUp:hover{
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="judul">
+                <h1>Login</h1>                
+            </div>
+
+            <form class="form" action="#">
+                <label id="username">Username</label>
+                <input class="name" type="text" placeholder="Type your username">
+
+                <label id="password">Password</label>
+                <input type="text" placeholder="Type your password">
+
+                <h5 class="fp">Forgot Password?</h5>
+
+                <input class="btn" type="submit" value="Login">
+
+                <h5 class="otherSign">Or Sign in using</h5>
+
+                <div class="logo">
+                        <img src="https://img.icons8.com/color/48/000000/facebook-new.png"/>
+                        <img src="https://img.icons8.com/color/48/000000/twitter-circled--v4.png"/>
+                        <img src="https://img.icons8.com/color/48/000000/google-logo.png"/>    
+                </div>
+            </form>
+            <h5>Dont have an account? <h4 class="signUp">sign up</h4></h5>
+        </div>
+    </div>
+</body>
+</html>
